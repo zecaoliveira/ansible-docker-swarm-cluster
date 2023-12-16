@@ -1,9 +1,14 @@
+[all]
+172.16.0.201
+172.16.0.211
+172.16.0.212
+
 [masters]
-master ansible_host=1.2.3.4
+master ansible_host=172.16.0.201
 
 [workers]
-node-1 ansible_host=2.3.4.5
-node-2 ansible_host=3.4.5.6
+node-1 ansible_host=172.16.0.211
+node-2 ansible_host=172.16.0.212
 
 [all:vars]
 ansible_python_interpreter=/usr/bin/python3
